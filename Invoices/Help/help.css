@@ -1,0 +1,25 @@
+/* HELP 1.0 */
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    color: #282828;
+    font: 300 1em/1.4 sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #47A;
+}
+
+a {
+    color: #06E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4AF;
+    text-decoration: underline;
+}

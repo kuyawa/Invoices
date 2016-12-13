@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0419BB1DCD3EBC007AB370 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0419BA1DCD3EBC007AB370 /* ColorUtils.swift */; };
+		3D11E0971DEE0008007E233F /* options1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D11E0951DEE0008007E233F /* options1.jpg */; };
+		3D11E0981DEE0008007E233F /* options2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D11E0961DEE0008007E233F /* options2.jpg */; };
+		3D29960F1DD5535C0004EB05 /* Migration01.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3D29960E1DD5535C0004EB05 /* Migration01.sql */; };
+		3D2D8A8F1DF842AE00CB2F2B /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D8A8D1DF842AE00CB2F2B /* LogView.swift */; };
+		3D2D8A901DF842AE00CB2F2B /* LogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2D8A8E1DF842AE00CB2F2B /* LogView.xib */; };
+		3D2FAF7D1DE5E5660086B326 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FAF7C1DE5E5650086B326 /* Alerts.swift */; };
+		3D3844771DFF4C3400B5D031 /* main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3844761DFF4C3400B5D031 /* main.jpg */; };
+		3D3844791DFF4FFE00B5D031 /* newinvoice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3844781DFF4FFE00B5D031 /* newinvoice.jpg */; };
+		3D40F52C1DFC483500014F03 /* TemplateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40F52B1DFC483500014F03 /* TemplateUtils.swift */; };
+		3D6603A21DD53EA200BE3494 /* Migrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6603A11DD53EA100BE3494 /* Migrations.swift */; };
+		3D66C0521DC5777800B7C000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66C0511DC5777800B7C000 /* AppDelegate.swift */; };
+		3D66C0541DC5777800B7C000 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66C0531DC5777800B7C000 /* MainController.swift */; };
+		3D66C0561DC5777800B7C000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D66C0551DC5777800B7C000 /* Assets.xcassets */; };
+		3D66C0591DC5777800B7C000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D66C0571DC5777800B7C000 /* Main.storyboard */; };
+		3D6DC8D81DE3852D00F1FE9D /* NumberUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6DC8D71DE3852D00F1FE9D /* NumberUtils.swift */; };
+		3D6E0EBC1DCA9B1600875545 /* Invoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E0EBB1DCA9B1600875545 /* Invoices.swift */; };
+		3D6E0EBE1DCA9E4300875545 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E0EBD1DCA9E4300875545 /* Customer.swift */; };
+		3D6E0EC01DCAD14A00875545 /* InvoiceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E0EBF1DCAD14A00875545 /* InvoiceLines.swift */; };
+		3D6E35FF1DC8165900C0BFC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6E35FE1DC8165900C0BFC9 /* libsqlite3.tbd */; };
+		3D6E36031DC8203F00C0BFC9 /* DataSchema.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E36021DC8203F00C0BFC9 /* DataSchema.sql */; };
+		3D72AAB71DFF5E3E006B5A13 /* listinvoices.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D72AAB61DFF5E3E006B5A13 /* listinvoices.jpg */; };
+		3D72AAB91DFF63E2006B5A13 /* customers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D72AAB81DFF63E2006B5A13 /* customers.jpg */; };
+		3D84AD611DFEF68E00CFE001 /* paid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D84AD5E1DFEF68D00CFE001 /* paid.png */; };
+		3D84AD621DFEF68E00CFE001 /* stamp_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D84AD5F1DFEF68E00CFE001 /* stamp_mail.png */; };
+		3D84AD631DFEF68E00CFE001 /* stamp_paid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D84AD601DFEF68E00CFE001 /* stamp_paid.png */; };
+		3D9E3A001DC9898F0005E2A7 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E39FF1DC9898F0005E2A7 /* DateUtils.swift */; };
+		3D9E3A021DC98E890005E2A7 /* MoneyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E3A011DC98E880005E2A7 /* MoneyUtils.swift */; };
+		3DA4C7251DC57FAD00FB55F7 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4C7241DC57FAD00FB55F7 /* StatusBar.swift */; };
+		3DA4C7281DC58F7E00FB55F7 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4C7271DC58F7E00FB55F7 /* Database.swift */; };
+		3DA4C72C1DC5935A00FB55F7 /* DataServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4C72B1DC5935A00FB55F7 /* DataServer.swift */; };
+		3DBC818A1DEE3B37003A4378 /* PageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC81891DEE3B37003A4378 /* PageRenderer.swift */; };
+		3DBC818C1DEE68AD003A4378 /* PdfUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC818B1DEE68AC003A4378 /* PdfUtils.swift */; };
+		3DBD4B251DDA717E006087E4 /* Migration02.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD4B241DDA717E006087E4 /* Migration02.sql */; };
+		3DBD4B271DDA7792006087E4 /* InvoiceUpdate.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD4B261DDA7792006087E4 /* InvoiceUpdate.sql */; };
+		3DC22FF61DD60E4900B85FD6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC22FF51DD60E4900B85FD6 /* Theme.swift */; };
+		3DC22FF81DD614B800B85FD6 /* InvoiceInsert.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3DC22FF71DD614B800B85FD6 /* InvoiceInsert.sql */; };
+		3DC22FFA1DD648F300B85FD6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC22FF91DD648F300B85FD6 /* DataModel.swift */; };
+		3DC22FFC1DD6509F00B85FD6 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC22FFB1DD6509F00B85FD6 /* Invoice.swift */; };
+		3DC22FFE1DD654BB00B85FD6 /* InvoiceLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC22FFD1DD654BB00B85FD6 /* InvoiceLine.swift */; };
+		3DC230001DD6592100B85FD6 /* DataQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC22FFF1DD6592100B85FD6 /* DataQuery.swift */; };
+		3DCFA4EE1DF778EA00E91C2E /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFA4ED1DF778E600E91C2E /* LogUtils.swift */; };
+		3DD1AE7D1DD3DAE300EA5549 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD1AE7B1DD3DAE200EA5549 /* OptionsView.swift */; };
+		3DD1AE7E1DD3DAE300EA5549 /* OptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD1AE7C1DD3DAE300EA5549 /* OptionsView.xib */; };
+		3DD6ECA21DCD202D004F75D8 /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6ECA01DCD202D004F75D8 /* InvoiceView.swift */; };
+		3DD6ECA31DCD202D004F75D8 /* InvoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD6ECA11DCD202D004F75D8 /* InvoiceView.xib */; };
+		3DD6ECA61DCD2042004F75D8 /* CustomersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6ECA41DCD2042004F75D8 /* CustomersList.swift */; };
+		3DD6ECA71DCD2042004F75D8 /* CustomersList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD6ECA51DCD2042004F75D8 /* CustomersList.xib */; };
+		3DD6ECAA1DCD205E004F75D8 /* InvoicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6ECA81DCD205E004F75D8 /* InvoicesList.swift */; };
+		3DD6ECAB1DCD205E004F75D8 /* InvoicesList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD6ECA91DCD205E004F75D8 /* InvoicesList.xib */; };
+		3DDE02361DDDFAE000143350 /* selectperson.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDE02351DDDFAE000143350 /* selectperson.png */; };
+		3DE060F61DCA2A1B00BA2471 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE060F51DCA2A1B00BA2471 /* StringUtils.swift */; };
+		3DE060F81DCA677900BA2471 /* AnyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE060F71DCA677900BA2471 /* AnyUtils.swift */; };
+		3DE43AF51DD7F0A5008680AE /* InvoiceMain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DE43AF41DD7F0A5008680AE /* InvoiceMain.jpg */; };
+		3DE478F71DD21D7800D51D21 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE478F61DD21D7800D51D21 /* Settings.swift */; };
+		3DE69F5C1DEC631100752934 /* PrintUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE69F5B1DEC631100752934 /* PrintUtils.swift */; };
+		3DE69F5E1DEC6B6D00752934 /* WebUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE69F5D1DEC6B6D00752934 /* WebUtils.swift */; };
+		3DE746C21DD7B507006F0E6E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE746C01DD7B507006F0E6E /* MainView.swift */; };
+		3DE746C31DD7B507006F0E6E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE746C11DD7B507006F0E6E /* MainView.xib */; };
+		3DE746C51DD7CB8B006F0E6E /* TextClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE746C41DD7CB8B006F0E6E /* TextClick.swift */; };
+		3DE980151DDE63A8009FD601 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE980131DDE63A8009FD601 /* HelpView.swift */; };
+		3DE980161DDE63A8009FD601 /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE980141DDE63A8009FD601 /* HelpView.xib */; };
+		3DE980191DDE6E54009FD601 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DE980181DDE6E54009FD601 /* index.html */; };
+		3DE9801B1DDE6EAB009FD601 /* invoices.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DE9801A1DDE6EAB009FD601 /* invoices.html */; };
+		3DE9801D1DDE6EF2009FD601 /* invoice.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DE9801C1DDE6EF2009FD601 /* invoice.html */; };
+		3DE9801F1DDE6F0F009FD601 /* customers.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DE9801E1DDE6F0F009FD601 /* customers.html */; };
+		3DE980211DDE6F29009FD601 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DE980201DDE6F29009FD601 /* options.html */; };
+		3DE980231DDE7400009FD601 /* help.css in Resources */ = {isa = PBXBuildFile; fileRef = 3DE980221DDE7400009FD601 /* help.css */; };
+		3DE990EB1DDBA373007AC88E /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE990EA1DDBA372007AC88E /* Customers.swift */; };
+		3DEBEA0D1DD530AC00F4E1C0 /* accept.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBE9FE1DD530AC00F4E1C0 /* accept.png */; };
+		3DEBEA0E1DD530AD00F4E1C0 /* additem.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBE9FF1DD530AC00F4E1C0 /* additem.png */; };
+		3DEBEA0F1DD530AD00F4E1C0 /* addperson.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA001DD530AC00F4E1C0 /* addperson.png */; };
+		3DEBEA101DD530AD00F4E1C0 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA011DD530AC00F4E1C0 /* back.png */; };
+		3DEBEA111DD530AD00F4E1C0 /* document.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA021DD530AC00F4E1C0 /* document.png */; };
+		3DEBEA121DD530AD00F4E1C0 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA031DD530AC00F4E1C0 /* edit.png */; };
+		3DEBEA131DD530AD00F4E1C0 /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA041DD530AC00F4E1C0 /* goback.png */; };
+		3DEBEA141DD530AD00F4E1C0 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA051DD530AC00F4E1C0 /* help.png */; };
+		3DEBEA151DD530AD00F4E1C0 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA061DD530AC00F4E1C0 /* mail.png */; };
+		3DEBEA161DD530AD00F4E1C0 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA071DD530AC00F4E1C0 /* people.png */; };
+		3DEBEA171DD530AD00F4E1C0 /* print.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA081DD530AC00F4E1C0 /* print.png */; };
+		3DEBEA181DD530AD00F4E1C0 /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA091DD530AC00F4E1C0 /* remove.png */; };
+		3DEBEA191DD530AD00F4E1C0 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA0A1DD530AC00F4E1C0 /* send.png */; };
+		3DEBEA1A1DD530AD00F4E1C0 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA0B1DD530AC00F4E1C0 /* settings.png */; };
+		3DEBEA1B1DD530AD00F4E1C0 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEBEA0C1DD530AC00F4E1C0 /* trash.png */; };
+		3DEF41231DE71AC100372C36 /* InvoiceDefault.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF41221DE71AC100372C36 /* InvoiceDefault.html */; };
+		3DEF41251DE7287A00372C36 /* PrintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF41241DE7287A00372C36 /* PrintView.xib */; };
+		3DEF41271DE728DB00372C36 /* PrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEF41261DE728DB00372C36 /* PrintView.swift */; };
+		3DEFAE431DCE13CA007FC6DA /* NotifyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAE421DCE13CA007FC6DA /* NotifyExtension.swift */; };
+		3DF0B9411DCD666A00AFCB9D /* ActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF0B9401DCD666A00AFCB9D /* ActionBar.swift */; };
+		3DF0B9451DCD6ABE00AFCB9D /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF0B9441DCD6ABE00AFCB9D /* ActionButton.swift */; };
+		3DF142C71DECB4D100BC0AAA /* MailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF142C61DECB4D100BC0AAA /* MailUtils.swift */; };
+		3DF8CF851DC6306900D06CD1 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8CF841DC6306900D06CD1 /* HeaderBar.swift */; };
+		3DFED5F21DE62BAF002AA89E /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFED5F11DE62BAF002AA89E /* FileUtils.swift */; };
+		3DFED5F41DE63488002AA89E /* DataJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFED5F31DE63487002AA89E /* DataJobs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D0419BA1DCD3EBC007AB370 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		3D11E0951DEE0008007E233F /* options1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = options1.jpg; sourceTree = "<group>"; };
+		3D11E0961DEE0008007E233F /* options2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = options2.jpg; sourceTree = "<group>"; };
+		3D1850841DFEDA8D00897A9A /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; wrapsLines = 0; };
+		3D29960E1DD5535C0004EB05 /* Migration01.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Migration01.sql; sourceTree = "<group>"; };
+		3D2D8A8D1DF842AE00CB2F2B /* LogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		3D2D8A8E1DF842AE00CB2F2B /* LogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogView.xib; sourceTree = "<group>"; };
+		3D2FAF7C1DE5E5650086B326 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		3D3825311DF654CC00825625 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		3D3844761DFF4C3400B5D031 /* main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main.jpg; sourceTree = "<group>"; };
+		3D3844781DFF4FFE00B5D031 /* newinvoice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newinvoice.jpg; sourceTree = "<group>"; };
+		3D40F52B1DFC483500014F03 /* TemplateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateUtils.swift; sourceTree = "<group>"; };
+		3D6603A11DD53EA100BE3494 /* Migrations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migrations.swift; sourceTree = "<group>"; };
+		3D66C04E1DC5777800B7C000 /* Invoices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Invoices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D66C0511DC5777800B7C000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D66C0531DC5777800B7C000 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		3D66C0551DC5777800B7C000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D66C0581DC5777800B7C000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D66C05A1DC5777800B7C000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6DC8D71DE3852D00F1FE9D /* NumberUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberUtils.swift; sourceTree = "<group>"; };
+		3D6E0EBB1DCA9B1600875545 /* Invoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoices.swift; sourceTree = "<group>"; };
+		3D6E0EBD1DCA9E4300875545 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		3D6E0EBF1DCAD14A00875545 /* InvoiceLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceLines.swift; sourceTree = "<group>"; };
+		3D6E35FC1DC8160600C0BFC9 /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
+		3D6E35FE1DC8165900C0BFC9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3D6E36021DC8203F00C0BFC9 /* DataSchema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataSchema.sql; sourceTree = "<group>"; };
+		3D72AAB61DFF5E3E006B5A13 /* listinvoices.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = listinvoices.jpg; sourceTree = "<group>"; };
+		3D72AAB81DFF63E2006B5A13 /* customers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = customers.jpg; sourceTree = "<group>"; };
+		3D84AD5E1DFEF68D00CFE001 /* paid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paid.png; sourceTree = "<group>"; };
+		3D84AD5F1DFEF68E00CFE001 /* stamp_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp_mail.png; sourceTree = "<group>"; };
+		3D84AD601DFEF68E00CFE001 /* stamp_paid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp_paid.png; sourceTree = "<group>"; };
+		3D9E39FF1DC9898F0005E2A7 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		3D9E3A011DC98E880005E2A7 /* MoneyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyUtils.swift; sourceTree = "<group>"; };
+		3DA4C7241DC57FAD00FB55F7 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		3DA4C7271DC58F7E00FB55F7 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3DA4C72B1DC5935A00FB55F7 /* DataServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServer.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3DBC81891DEE3B37003A4378 /* PageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageRenderer.swift; sourceTree = "<group>"; };
+		3DBC818B1DEE68AC003A4378 /* PdfUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfUtils.swift; sourceTree = "<group>"; };
+		3DBD4B241DDA717E006087E4 /* Migration02.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Migration02.sql; sourceTree = "<group>"; };
+		3DBD4B261DDA7792006087E4 /* InvoiceUpdate.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InvoiceUpdate.sql; sourceTree = "<group>"; };
+		3DC22FF51DD60E4900B85FD6 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3DC22FF71DD614B800B85FD6 /* InvoiceInsert.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InvoiceInsert.sql; sourceTree = "<group>"; };
+		3DC22FF91DD648F300B85FD6 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		3DC22FFB1DD6509F00B85FD6 /* Invoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3DC22FFD1DD654BB00B85FD6 /* InvoiceLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceLine.swift; sourceTree = "<group>"; };
+		3DC22FFF1DD6592100B85FD6 /* DataQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataQuery.swift; sourceTree = "<group>"; };
+		3DCFA4ED1DF778E600E91C2E /* LogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
+		3DD1AE7B1DD3DAE200EA5549 /* OptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		3DD1AE7C1DD3DAE300EA5549 /* OptionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsView.xib; sourceTree = "<group>"; };
+		3DD6ECA01DCD202D004F75D8 /* InvoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3DD6ECA11DCD202D004F75D8 /* InvoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvoiceView.xib; sourceTree = "<group>"; };
+		3DD6ECA41DCD2042004F75D8 /* CustomersList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersList.swift; sourceTree = "<group>"; };
+		3DD6ECA51DCD2042004F75D8 /* CustomersList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomersList.xib; sourceTree = "<group>"; };
+		3DD6ECA81DCD205E004F75D8 /* InvoicesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoicesList.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3DD6ECA91DCD205E004F75D8 /* InvoicesList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvoicesList.xib; sourceTree = "<group>"; };
+		3DDE02351DDDFAE000143350 /* selectperson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectperson.png; sourceTree = "<group>"; };
+		3DE060F51DCA2A1B00BA2471 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		3DE060F71DCA677900BA2471 /* AnyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyUtils.swift; sourceTree = "<group>"; };
+		3DE43AF41DD7F0A5008680AE /* InvoiceMain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InvoiceMain.jpg; sourceTree = "<group>"; };
+		3DE478F61DD21D7800D51D21 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3DE69F5B1DEC631100752934 /* PrintUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintUtils.swift; sourceTree = "<group>"; };
+		3DE69F5D1DEC6B6D00752934 /* WebUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebUtils.swift; sourceTree = "<group>"; };
+		3DE746C01DD7B507006F0E6E /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3DE746C11DD7B507006F0E6E /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		3DE746C41DD7CB8B006F0E6E /* TextClick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextClick.swift; sourceTree = "<group>"; };
+		3DE980131DDE63A8009FD601 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		3DE980141DDE63A8009FD601 /* HelpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpView.xib; sourceTree = "<group>"; };
+		3DE980181DDE6E54009FD601 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3DE9801A1DDE6EAB009FD601 /* invoices.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = invoices.html; sourceTree = "<group>"; };
+		3DE9801C1DDE6EF2009FD601 /* invoice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = invoice.html; sourceTree = "<group>"; };
+		3DE9801E1DDE6F0F009FD601 /* customers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = customers.html; sourceTree = "<group>"; };
+		3DE980201DDE6F29009FD601 /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
+		3DE980221DDE7400009FD601 /* help.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = help.css; sourceTree = "<group>"; };
+		3DE990EA1DDBA372007AC88E /* Customers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
+		3DEBE9FE1DD530AC00F4E1C0 /* accept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accept.png; sourceTree = "<group>"; };
+		3DEBE9FF1DD530AC00F4E1C0 /* additem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = additem.png; sourceTree = "<group>"; };
+		3DEBEA001DD530AC00F4E1C0 /* addperson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addperson.png; sourceTree = "<group>"; };
+		3DEBEA011DD530AC00F4E1C0 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		3DEBEA021DD530AC00F4E1C0 /* document.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document.png; sourceTree = "<group>"; };
+		3DEBEA031DD530AC00F4E1C0 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		3DEBEA041DD530AC00F4E1C0 /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
+		3DEBEA051DD530AC00F4E1C0 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		3DEBEA061DD530AC00F4E1C0 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		3DEBEA071DD530AC00F4E1C0 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		3DEBEA081DD530AC00F4E1C0 /* print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = print.png; sourceTree = "<group>"; };
+		3DEBEA091DD530AC00F4E1C0 /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
+		3DEBEA0A1DD530AC00F4E1C0 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		3DEBEA0B1DD530AC00F4E1C0 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		3DEBEA0C1DD530AC00F4E1C0 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		3DEF41221DE71AC100372C36 /* InvoiceDefault.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = InvoiceDefault.html; sourceTree = "<group>"; wrapsLines = 0; };
+		3DEF41241DE7287A00372C36 /* PrintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintView.xib; sourceTree = "<group>"; };
+		3DEF41261DE728DB00372C36 /* PrintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintView.swift; sourceTree = "<group>"; };
+		3DEFAE421DCE13CA007FC6DA /* NotifyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyExtension.swift; sourceTree = "<group>"; };
+		3DF0B9401DCD666A00AFCB9D /* ActionBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionBar.swift; sourceTree = "<group>"; };
+		3DF0B9441DCD6ABE00AFCB9D /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		3DF142C61DECB4D100BC0AAA /* MailUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailUtils.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3DF8CF841DC6306900D06CD1 /* HeaderBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
+		3DFED5F11DE62BAF002AA89E /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		3DFED5F31DE63487002AA89E /* DataJobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataJobs.swift; sourceTree = "<group>"; wrapsLines = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D66C04B1DC5777700B7C000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6E35FF1DC8165900C0BFC9 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D11E0941DEDFFE3007E233F /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				3D3844761DFF4C3400B5D031 /* main.jpg */,
+				3D3844781DFF4FFE00B5D031 /* newinvoice.jpg */,
+				3D72AAB61DFF5E3E006B5A13 /* listinvoices.jpg */,
+				3D72AAB81DFF63E2006B5A13 /* customers.jpg */,
+				3D11E0951DEE0008007E233F /* options1.jpg */,
+				3D11E0961DEE0008007E233F /* options2.jpg */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		3D66C0451DC5777700B7C000 = {
+			isa = PBXGroup;
+			children = (
+				3D3825311DF654CC00825625 /* Readme.md */,
+				3D1850841DFEDA8D00897A9A /* ToDo.txt */,
+				3D66C0501DC5777800B7C000 /* Invoices */,
+				3D6E35FD1DC8165900C0BFC9 /* Frameworks */,
+				3D66C04F1DC5777800B7C000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D66C04F1DC5777800B7C000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D66C04E1DC5777800B7C000 /* Invoices.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D66C0501DC5777800B7C000 /* Invoices */ = {
+			isa = PBXGroup;
+			children = (
+				3D66C0511DC5777800B7C000 /* AppDelegate.swift */,
+				3D66C05A1DC5777800B7C000 /* Info.plist */,
+				3DE478F61DD21D7800D51D21 /* Settings.swift */,
+				3DC22FF51DD60E4900B85FD6 /* Theme.swift */,
+				3D66C0531DC5777800B7C000 /* MainController.swift */,
+				3D66C0571DC5777800B7C000 /* Main.storyboard */,
+				3D66C0551DC5777800B7C000 /* Assets.xcassets */,
+				3DD6EC9F1DCD1FF7004F75D8 /* Views */,
+				3DEF41211DE71A4600372C36 /* Templates */,
+				3DF8CF861DC636CE00D06CD1 /* UIControls */,
+				3DEBE9FD1DD5307300F4E1C0 /* Media */,
+				3D6E0EBA1DCA9AED00875545 /* Models */,
+				3DA4C7261DC58F5A00FB55F7 /* Database */,
+				3D9E39FE1DC989570005E2A7 /* Utils */,
+				3DE980171DDE6DEB009FD601 /* Help */,
+			);
+			path = Invoices;
+			sourceTree = "<group>";
+		};
+		3D6E0EBA1DCA9AED00875545 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DC22FFB1DD6509F00B85FD6 /* Invoice.swift */,
+				3D6E0EBB1DCA9B1600875545 /* Invoices.swift */,
+				3DC22FFD1DD654BB00B85FD6 /* InvoiceLine.swift */,
+				3D6E0EBF1DCAD14A00875545 /* InvoiceLines.swift */,
+				3D6E0EBD1DCA9E4300875545 /* Customer.swift */,
+				3DE990EA1DDBA372007AC88E /* Customers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D6E35FD1DC8165900C0BFC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D6E35FE1DC8165900C0BFC9 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D9E39FE1DC989570005E2A7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3DE060F71DCA677900BA2471 /* AnyUtils.swift */,
+				3D0419BA1DCD3EBC007AB370 /* ColorUtils.swift */,
+				3D9E39FF1DC9898F0005E2A7 /* DateUtils.swift */,
+				3DFED5F11DE62BAF002AA89E /* FileUtils.swift */,
+				3DCFA4ED1DF778E600E91C2E /* LogUtils.swift */,
+				3DF142C61DECB4D100BC0AAA /* MailUtils.swift */,
+				3D9E3A011DC98E880005E2A7 /* MoneyUtils.swift */,
+				3D6DC8D71DE3852D00F1FE9D /* NumberUtils.swift */,
+				3DBC81891DEE3B37003A4378 /* PageRenderer.swift */,
+				3DBC818B1DEE68AC003A4378 /* PdfUtils.swift */,
+				3DE69F5B1DEC631100752934 /* PrintUtils.swift */,
+				3DE060F51DCA2A1B00BA2471 /* StringUtils.swift */,
+				3D40F52B1DFC483500014F03 /* TemplateUtils.swift */,
+				3DE69F5D1DEC6B6D00752934 /* WebUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3DA4C7261DC58F5A00FB55F7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3D6E35FC1DC8160600C0BFC9 /* bridging-header.h */,
+				3D6E36021DC8203F00C0BFC9 /* DataSchema.sql */,
+				3DA4C72B1DC5935A00FB55F7 /* DataServer.swift */,
+				3DA4C7271DC58F7E00FB55F7 /* Database.swift */,
+				3DC22FF91DD648F300B85FD6 /* DataModel.swift */,
+				3DC22FFF1DD6592100B85FD6 /* DataQuery.swift */,
+				3DFED5F31DE63487002AA89E /* DataJobs.swift */,
+				3D6603A11DD53EA100BE3494 /* Migrations.swift */,
+				3D29960E1DD5535C0004EB05 /* Migration01.sql */,
+				3DBD4B241DDA717E006087E4 /* Migration02.sql */,
+				3DC22FF71DD614B800B85FD6 /* InvoiceInsert.sql */,
+				3DBD4B261DDA7792006087E4 /* InvoiceUpdate.sql */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3DD6EC9F1DCD1FF7004F75D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DE746C01DD7B507006F0E6E /* MainView.swift */,
+				3DE746C11DD7B507006F0E6E /* MainView.xib */,
+				3DD6ECA81DCD205E004F75D8 /* InvoicesList.swift */,
+				3DD6ECA91DCD205E004F75D8 /* InvoicesList.xib */,
+				3DD6ECA01DCD202D004F75D8 /* InvoiceView.swift */,
+				3DD6ECA11DCD202D004F75D8 /* InvoiceView.xib */,
+				3DD6ECA41DCD2042004F75D8 /* CustomersList.swift */,
+				3DD6ECA51DCD2042004F75D8 /* CustomersList.xib */,
+				3DD1AE7B1DD3DAE200EA5549 /* OptionsView.swift */,
+				3DD1AE7C1DD3DAE300EA5549 /* OptionsView.xib */,
+				3DE980131DDE63A8009FD601 /* HelpView.swift */,
+				3DE980141DDE63A8009FD601 /* HelpView.xib */,
+				3DEF41261DE728DB00372C36 /* PrintView.swift */,
+				3DEF41241DE7287A00372C36 /* PrintView.xib */,
+				3D2D8A8D1DF842AE00CB2F2B /* LogView.swift */,
+				3D2D8A8E1DF842AE00CB2F2B /* LogView.xib */,
+				3DEFAE421DCE13CA007FC6DA /* NotifyExtension.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DE980171DDE6DEB009FD601 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				3D11E0941DEDFFE3007E233F /* Media */,
+				3DE980181DDE6E54009FD601 /* index.html */,
+				3DE9801C1DDE6EF2009FD601 /* invoice.html */,
+				3DE9801A1DDE6EAB009FD601 /* invoices.html */,
+				3DE9801E1DDE6F0F009FD601 /* customers.html */,
+				3DE980201DDE6F29009FD601 /* options.html */,
+				3DE980221DDE7400009FD601 /* help.css */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		3DEBE9FD1DD5307300F4E1C0 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				3DE43AF41DD7F0A5008680AE /* InvoiceMain.jpg */,
+				3DEBE9FE1DD530AC00F4E1C0 /* accept.png */,
+				3DEBE9FF1DD530AC00F4E1C0 /* additem.png */,
+				3DEBEA001DD530AC00F4E1C0 /* addperson.png */,
+				3DEBEA011DD530AC00F4E1C0 /* back.png */,
+				3DEBEA021DD530AC00F4E1C0 /* document.png */,
+				3DEBEA031DD530AC00F4E1C0 /* edit.png */,
+				3DEBEA041DD530AC00F4E1C0 /* goback.png */,
+				3DEBEA051DD530AC00F4E1C0 /* help.png */,
+				3DEBEA061DD530AC00F4E1C0 /* mail.png */,
+				3D84AD5E1DFEF68D00CFE001 /* paid.png */,
+				3DEBEA071DD530AC00F4E1C0 /* people.png */,
+				3DEBEA081DD530AC00F4E1C0 /* print.png */,
+				3DEBEA091DD530AC00F4E1C0 /* remove.png */,
+				3DDE02351DDDFAE000143350 /* selectperson.png */,
+				3DEBEA0A1DD530AC00F4E1C0 /* send.png */,
+				3DEBEA0B1DD530AC00F4E1C0 /* settings.png */,
+				3D84AD5F1DFEF68E00CFE001 /* stamp_mail.png */,
+				3D84AD601DFEF68E00CFE001 /* stamp_paid.png */,
+				3DEBEA0C1DD530AC00F4E1C0 /* trash.png */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		3DEF41211DE71A4600372C36 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				3DEF41221DE71AC100372C36 /* InvoiceDefault.html */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		3DF8CF861DC636CE00D06CD1 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				3DF0B9401DCD666A00AFCB9D /* ActionBar.swift */,
+				3DF0B9441DCD6ABE00AFCB9D /* ActionButton.swift */,
+				3D2FAF7C1DE5E5650086B326 /* Alerts.swift */,
+				3DF8CF841DC6306900D06CD1 /* HeaderBar.swift */,
+				3DA4C7241DC57FAD00FB55F7 /* StatusBar.swift */,
+				3DE746C41DD7CB8B006F0E6E /* TextClick.swift */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D66C04D1DC5777700B7C000 /* Invoices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D66C05D1DC5777800B7C000 /* Build configuration list for PBXNativeTarget "Invoices" */;
+			buildPhases = (
+				3D66C04A1DC5777700B7C000 /* Sources */,
+				3D66C04B1DC5777700B7C000 /* Frameworks */,
+				3D66C04C1DC5777700B7C000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Invoices;
+			productName = Invoices;
+			productReference = 3D66C04E1DC5777800B7C000 /* Invoices.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D66C0461DC5777700B7C000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Armonia;
+				TargetAttributes = {
+					3D66C04D1DC5777700B7C000 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D66C0491DC5777700B7C000 /* Build configuration list for PBXProject "Invoices" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D66C0451DC5777700B7C000;
+			productRefGroup = 3D66C04F1DC5777800B7C000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D66C04D1DC5777700B7C000 /* Invoices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D66C04C1DC5777700B7C000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEBEA0E1DD530AD00F4E1C0 /* additem.png in Resources */,
+				3D11E0981DEE0008007E233F /* options2.jpg in Resources */,
+				3D72AAB71DFF5E3E006B5A13 /* listinvoices.jpg in Resources */,
+				3D66C0561DC5777800B7C000 /* Assets.xcassets in Resources */,
+				3DEBEA161DD530AD00F4E1C0 /* people.png in Resources */,
+				3DEBEA191DD530AD00F4E1C0 /* send.png in Resources */,
+				3D84AD611DFEF68E00CFE001 /* paid.png in Resources */,
+				3D11E0971DEE0008007E233F /* options1.jpg in Resources */,
+				3DEBEA151DD530AD00F4E1C0 /* mail.png in Resources */,
+				3D66C0591DC5777800B7C000 /* Main.storyboard in Resources */,
+				3DEF41251DE7287A00372C36 /* PrintView.xib in Resources */,
+				3D6E36031DC8203F00C0BFC9 /* DataSchema.sql in Resources */,
+				3DE980211DDE6F29009FD601 /* options.html in Resources */,
+				3DBD4B251DDA717E006087E4 /* Migration02.sql in Resources */,
+				3DEBEA131DD530AD00F4E1C0 /* goback.png in Resources */,
+				3DE43AF51DD7F0A5008680AE /* InvoiceMain.jpg in Resources */,
+				3DEBEA111DD530AD00F4E1C0 /* document.png in Resources */,
+				3DEBEA0F1DD530AD00F4E1C0 /* addperson.png in Resources */,
+				3DD6ECA31DCD202D004F75D8 /* InvoiceView.xib in Resources */,
+				3DEBEA101DD530AD00F4E1C0 /* back.png in Resources */,
+				3DEF41231DE71AC100372C36 /* InvoiceDefault.html in Resources */,
+				3DE746C31DD7B507006F0E6E /* MainView.xib in Resources */,
+				3DBD4B271DDA7792006087E4 /* InvoiceUpdate.sql in Resources */,
+				3DE9801B1DDE6EAB009FD601 /* invoices.html in Resources */,
+				3D29960F1DD5535C0004EB05 /* Migration01.sql in Resources */,
+				3DD6ECAB1DCD205E004F75D8 /* InvoicesList.xib in Resources */,
+				3DE980231DDE7400009FD601 /* help.css in Resources */,
+				3DD1AE7E1DD3DAE300EA5549 /* OptionsView.xib in Resources */,
+				3DC22FF81DD614B800B85FD6 /* InvoiceInsert.sql in Resources */,
+				3DE9801D1DDE6EF2009FD601 /* invoice.html in Resources */,
+				3DDE02361DDDFAE000143350 /* selectperson.png in Resources */,
+				3D84AD621DFEF68E00CFE001 /* stamp_mail.png in Resources */,
+				3D3844771DFF4C3400B5D031 /* main.jpg in Resources */,
+				3D72AAB91DFF63E2006B5A13 /* customers.jpg in Resources */,
+				3DEBEA1B1DD530AD00F4E1C0 /* trash.png in Resources */,
+				3DE980191DDE6E54009FD601 /* index.html in Resources */,
+				3DEBEA141DD530AD00F4E1C0 /* help.png in Resources */,
+				3D2D8A901DF842AE00CB2F2B /* LogView.xib in Resources */,
+				3DEBEA121DD530AD00F4E1C0 /* edit.png in Resources */,
+				3DEBEA0D1DD530AC00F4E1C0 /* accept.png in Resources */,
+				3DEBEA171DD530AD00F4E1C0 /* print.png in Resources */,
+				3DEBEA181DD530AD00F4E1C0 /* remove.png in Resources */,
+				3D84AD631DFEF68E00CFE001 /* stamp_paid.png in Resources */,
+				3DE9801F1DDE6F0F009FD601 /* customers.html in Resources */,
+				3DEBEA1A1DD530AD00F4E1C0 /* settings.png in Resources */,
+				3DD6ECA71DCD2042004F75D8 /* CustomersList.xib in Resources */,
+				3D3844791DFF4FFE00B5D031 /* newinvoice.jpg in Resources */,
+				3DE980161DDE63A8009FD601 /* HelpView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D66C04A1DC5777700B7C000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6DC8D81DE3852D00F1FE9D /* NumberUtils.swift in Sources */,
+				3DC22FF61DD60E4900B85FD6 /* Theme.swift in Sources */,
+				3D6E0EBE1DCA9E4300875545 /* Customer.swift in Sources */,
+				3DE69F5C1DEC631100752934 /* PrintUtils.swift in Sources */,
+				3DC230001DD6592100B85FD6 /* DataQuery.swift in Sources */,
+				3D9E3A021DC98E890005E2A7 /* MoneyUtils.swift in Sources */,
+				3DA4C72C1DC5935A00FB55F7 /* DataServer.swift in Sources */,
+				3DF0B9451DCD6ABE00AFCB9D /* ActionButton.swift in Sources */,
+				3DD6ECAA1DCD205E004F75D8 /* InvoicesList.swift in Sources */,
+				3D2D8A8F1DF842AE00CB2F2B /* LogView.swift in Sources */,
+				3DE746C21DD7B507006F0E6E /* MainView.swift in Sources */,
+				3DC22FFC1DD6509F00B85FD6 /* Invoice.swift in Sources */,
+				3DD6ECA21DCD202D004F75D8 /* InvoiceView.swift in Sources */,
+				3D9E3A001DC9898F0005E2A7 /* DateUtils.swift in Sources */,
+				3DD1AE7D1DD3DAE300EA5549 /* OptionsView.swift in Sources */,
+				3DA4C7251DC57FAD00FB55F7 /* StatusBar.swift in Sources */,
+				3DE060F81DCA677900BA2471 /* AnyUtils.swift in Sources */,
+				3D66C0541DC5777800B7C000 /* MainController.swift in Sources */,
+				3DE990EB1DDBA373007AC88E /* Customers.swift in Sources */,
+				3DE980151DDE63A8009FD601 /* HelpView.swift in Sources */,
+				3DD6ECA61DCD2042004F75D8 /* CustomersList.swift in Sources */,
+				3DF0B9411DCD666A00AFCB9D /* ActionBar.swift in Sources */,
+				3DEF41271DE728DB00372C36 /* PrintView.swift in Sources */,
+				3D0419BB1DCD3EBC007AB370 /* ColorUtils.swift in Sources */,
+				3DE69F5E1DEC6B6D00752934 /* WebUtils.swift in Sources */,
+				3DBC818A1DEE3B37003A4378 /* PageRenderer.swift in Sources */,
+				3DEFAE431DCE13CA007FC6DA /* NotifyExtension.swift in Sources */,
+				3D6E0EBC1DCA9B1600875545 /* Invoices.swift in Sources */,
+				3DA4C7281DC58F7E00FB55F7 /* Database.swift in Sources */,
+				3DE060F61DCA2A1B00BA2471 /* StringUtils.swift in Sources */,
+				3D2FAF7D1DE5E5660086B326 /* Alerts.swift in Sources */,
+				3DFED5F21DE62BAF002AA89E /* FileUtils.swift in Sources */,
+				3DC22FFE1DD654BB00B85FD6 /* InvoiceLine.swift in Sources */,
+				3DE478F71DD21D7800D51D21 /* Settings.swift in Sources */,
+				3DC22FFA1DD648F300B85FD6 /* DataModel.swift in Sources */,
+				3DCFA4EE1DF778EA00E91C2E /* LogUtils.swift in Sources */,
+				3D6603A21DD53EA200BE3494 /* Migrations.swift in Sources */,
+				3DF8CF851DC6306900D06CD1 /* HeaderBar.swift in Sources */,
+				3DE746C51DD7CB8B006F0E6E /* TextClick.swift in Sources */,
+				3DF142C71DECB4D100BC0AAA /* MailUtils.swift in Sources */,
+				3D66C0521DC5777800B7C000 /* AppDelegate.swift in Sources */,
+				3D40F52C1DFC483500014F03 /* TemplateUtils.swift in Sources */,
+				3D6E0EC01DCAD14A00875545 /* InvoiceLines.swift in Sources */,
+				3DBC818C1DEE68AD003A4378 /* PdfUtils.swift in Sources */,
+				3DFED5F41DE63488002AA89E /* DataJobs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D66C0571DC5777800B7C000 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D66C0581DC5777800B7C000 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D66C05B1DC5777800B7C000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D66C05C1DC5777800B7C000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		3D66C05E1DC5777800B7C000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Packages",
+				);
+				INFOPLIST_FILE = Invoices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = Armonia.Invoices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(SRCROOT)/Invoices/Database/bridging-header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3D66C05F1DC5777800B7C000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Packages",
+				);
+				INFOPLIST_FILE = Invoices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = Armonia.Invoices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(SRCROOT)/Invoices/Database/bridging-header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D66C0491DC5777700B7C000 /* Build configuration list for PBXProject "Invoices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D66C05B1DC5777800B7C000 /* Debug */,
+				3D66C05C1DC5777800B7C000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D66C05D1DC5777800B7C000 /* Build configuration list for PBXNativeTarget "Invoices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D66C05E1DC5777800B7C000 /* Debug */,
+				3D66C05F1DC5777800B7C000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D66C0461DC5777700B7C000 /* Project object */;
+}

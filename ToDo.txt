@@ -1,0 +1,199 @@
+FIX!
+- ?
+ 
+ToDo:
+
+- Search for ToDo's in code and fix
+- Clean up code before shipping, remove extra comments and prints
+- Wrap up and publish
+
+------------------------------------------------------------------------------------
+
+? Use DataServer.shared instance
+? Send as html instead of pdf?
+? Make little icons for sent, received like whatsapp. Use system icons
+? Dropdown Terms: COD, NET 7, NET 10, NET 15, NET 30, NET 60
+? Insert invoice lines below current, reorder line numbers
+? auto add new line on key down in last row
+? Invoice on save animate button from gray to green checkmark to gray in one second?
+? Fields vertical alignment?
+? Options: Tax label TAX, VAT, IVA, Language, Currency
+
+x Add help in html: FAQ, use, etc
+x Popup message while loading mail service
+x "Mailing service may take a while to initiate in another window - OK"
+x Invoice on send, change sent status
+x On sent, paid: update stamps
+x DB partial saving for status, stamp, sent, due, paid.
+x Stamps for paid, due
+x Send logs by email to techsupport@armoniasoft.com
+x Pdf printing blank page after invoice, remove it
+x Remove stencil from app. Use string.replace
+x Invoice send: Get email from customer info if available, else leave blank and let user fill in
+x send invoice by email, attachment not working
+x check if pdf exists and send it, else create it and send it
+x Main image should fit screen. Stretch to fit
+x Invoice on new.save should refresh list and select new invoice
+x Invoice on edit.save should refresh current row
+x On invoice update, check not to save customer info twice
+x Invoice view prev/next on edit only
+x on update, check invoice items for new/mod/del
+x add a deleted flag to invoice items class, strike in tableView if deleted
+x Purge log files older than 7 days
+x View log from menu/view/Log file
+x Use dates list, content in webView using colors fail:red, warn:orange, data:green, info:black, text:gray
+x Replace all print() with Logger.log()
+x Log errors and warnings to text file
+x Move applog.txt to Armonia/Invoices/Config
+x Move settings.info to Armonia/Invoices/Config
+x FIX: DOUBLES IN LINEITEMS SAVING AS INT!!!
+x FIX: PARAMETERS NOT BINDING CORRECTLY IN DATASERVER!!!
+x save as pdf directly on saving invoice, will use to send or print
+x if has changed: resave as pdf else use existing pdf
+x PDF: preview html/stencil, automate print to pdf
+x make help fixed with and centered, use image options1 as max width
+x Form toolbar actions: Save, Cancel, Preview, Print
+x copy invoiceDefault to templates folder if not exists on init
+x create /armonia/invoices/templates folder,
+x move database to /armonia/invoices/database folder
+x create /armonia/invoices/archives folder to store all pdfs
+x PDF: fix pdf zoom, size and margins for printing
+x Invoice on delete not refreshing invoice list on goback
+x If invoice is due: color in red, if paid: color in blue, else in black
+x Once a day, on first run, it should check for past due invoices and update their status
+x Move Invoices.db to '/Documents/Armonia/Invoices' folder
+x On options save, update DB sequences for next invoice if not less than current, else warn user
+x On settings.load, if not exists, save default from class
+x Remove view controllers from all nibs
+x Reassign all outlets and actions to file's owner
+x Customer Select, if no select action, disable select icon
+x on notify for Select: action = edit, show select icon
+x onCustomerSelect: return customerId, goBack
+x On billto.email exit, if no customerid then add to customers, assign customerid
+x On shipto.email if customerIsNew and not blank info, update customer info by custoemrid
+x Customers record counter in statusbar
+x Invoices by month
+x Calc totals of the month
+x models.fromDictionary, use setValue and loop properties
+
+x if deleted last customer, add new? No.
+x If empty records: action = new, setup form as blank, customer name gets focus
+x If records: action = edit, table gets focus, show first record
+x onNew button: action = new, setup form as blank, customer name gets focus
+x onSave/onTrash button: action = edit, select new/current record, focus on table
+
+x remove trailing blank lines on save, not intermediate blanks used as separators
+x Add 10 empty lines
+x recalc totals on row remove
+x update tax rate in invoice when loading from settings
+x resize table columns proportionally just like invoicesList
+x on quantity, unitprice change: update line total and invoice totals
+x on cell edit, update listItems[row]
+x item counter: sum quantities not count lines
+x insert item on cmd+ and remove item on cmd-
+x make price/total blank if zero for empty lines
+x Add +/- buttons to bottom of table
+
+x SQLITE NOT UPDATING. Try new library or saving without binding
+  Saving without binding works but it's not cool
+  Binding by position works, binding by name doesn't
+  Will use binding by position. Issue closed
+
+x Migration: Add billToEmail, shipToEmail
+
+x Invoice New:
+  x Default data:
+    x Invoice Number: from sequence
+    x Issue date: now
+    x Terms: from settings.info (settings.plist or json)
+    x Due Date: Issue date + terms
+ 
+x Migrations?
+x Check dataserver version
+    on old version, migrate
+    save dataVersion number in DB and settings
+    on new dataVersion in settings: migrate every step to the new version
+
+x Invoice form for data entry
+x Textfields navigate on tab/enter textField.becomeFirstResponder ?
+x Images for toolbar: invoice, view, send, customers, options
+x How to send/receive data in view transitions
+x Ten invoices as sample
+x Total invoices in headerbar
+x On windows resize, resize all table columns proportionally
+x Invoices list
+x Database in sqlite invoices.db
+ 
+ ------------------------------------------------------------------------------------
+ 
+ VERSION 2
+ 
+ - Internationalization, strings file.
+ 
+ - Customers
+   - If records.count > 100 query byLetter, start with A
+
+ - Add stamps
+   - Paid, Due, Cancelled, Shipped, Sent, Received, Archived
+     Classify as: issued/cancelled/archived - due/partial/paid - fulfilling/shipped/received
+     for sent, use mail stamp
+     for due:red paid:blue circled word
+     for cancelled:red archived:yellow circled word
+     for shipped:green received:orange circled word
+
+ 
+VERSION 3
+
+- Mailboxes and exchanging functionality
+- Receive always as ubl/xml with stylesheet
+- Use stylesheet from customer to view invoice, if not available use default
+- Reports: Invoices totals by month: total, due, paid
+- Graphs: daily/weekly/monthly/yearly sales
+- Payables, Receivables
+- Quotations
+- Products
+- Orders
+- Suppliers
+- Fulfillment
+- Send as html, pdf, xml, edi, ubl
+
+VERSION 4
+
+- Accounting
+- Point of sale
+- Shipment tracking
+- Mobile apps
+
+
+----------------------------------------------------------------
+ 
+company name                            Invoice #  : 123456
+address                                 Issue Date : 01/01/2016
+phone - fax                             Terms      : NET7
+email                                   Due Date   : 07/01/2016
+web                                     Total due  : $550.00
+ 
+ 
+bill to:                                ship to:
+- name                                  - same
+- address
+- city st zip
+- phone
+- email
+ 
+ 
+Qty    Description                Unit Price    UoM       Total
+----------------------------------------------------------------
+20     Shoes                           25.00    ea       250.00
+10     Jeans                           25.00    ea       250.00
+ 
+ 
+----------------------------------------------------------------
+Notes:                                      Subtotal :   500.00
+  Fragile. Handle with care                Tax 10.0% :    50.00
+  Next day delivery                            Total :   550.00
+ 
+ 
+                We appreciate your business
+
+END.

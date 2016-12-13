@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainView" customModule="Invoices" customModuleProvider="target">
+            <connections>
+                <outlet property="labelCustomers" destination="dtD-z3-rLG" id="zmg-EW-g1d"/>
+                <outlet property="labelListInvoices" destination="UnX-Rs-g13" id="luV-h1-AXj"/>
+                <outlet property="labelNewInvoice" destination="T5n-tl-0eE" id="Cjo-Gd-4xB"/>
+                <outlet property="labelOptions" destination="80y-Dc-BDV" id="UoC-bB-63n"/>
+                <outlet property="menuArea" destination="FjF-Rt-ifx" id="OVW-He-saJ"/>
+                <outlet property="sideArea" destination="hJ2-Ga-8VI" id="xHk-3o-PiO"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="1000" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" alphaValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-60-2mN">
+                    <rect key="frame" x="-48" y="-48" width="1094" height="674"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="InvoiceMain" id="vzD-H1-B79"/>
+                </imageView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJ2-Ga-8VI">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-kf-tFT">
+                    <rect key="frame" x="42" y="523" width="216" height="57"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="INVOICES" id="1N9-xW-CPN">
+                        <font key="font" size="48" name="HelveticaNeue-Light"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gm-oi-tew">
+                    <rect key="frame" x="104" y="504" width="91" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.0" id="ghD-jq-IQ3">
+                        <font key="font" size="18" name="HelveticaNeue-Light"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FjF-Rt-ifx">
+                    <rect key="frame" x="13" y="159" width="276" height="336"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9r-VW-xpB">
+                            <rect key="frame" x="37" y="228" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="document" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iOd-dv-Pr2">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onNewInvoice:" target="-2" id="Gjj-7M-Ozn"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5n-tl-0eE" customClass="TextClick" customModule="Invoices" customModuleProvider="target">
+                            <rect key="frame" x="98" y="237" width="160" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="New Invoice" id="aPy-ol-MIg">
+                                <font key="font" size="24" name="HelveticaNeue-Light"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="onNewInvoice:" target="-2" id="aI6-hv-lhQ"/>
+                                <outlet property="delegate" destination="-2" id="dDY-5a-SmU"/>
+                            </connections>
+                        </textField>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1d-ao-p4e">
+                            <rect key="frame" x="37" y="172" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="edit" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VGy-rE-zpx">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onListInvoices:" target="-2" id="Vpo-YM-Bqi"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-Rs-g13" customClass="TextClick" customModule="Invoices" customModuleProvider="target">
+                            <rect key="frame" x="98" y="181" width="160" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="List Invoices" id="4UD-RZ-67n">
+                                <font key="font" size="24" name="HelveticaNeue-Light"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="onListInvoices:" target="-2" id="yEd-BJ-8Fk"/>
+                                <outlet property="delegate" destination="-2" id="UFQ-2r-QU0"/>
+                            </connections>
+                        </textField>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWy-fz-Qam">
+                            <rect key="frame" x="37" y="116" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="people" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jvM-t2-orM">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onCustomers:" target="-2" id="ST3-3A-lZQ"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtD-z3-rLG" customClass="TextClick" customModule="Invoices" customModuleProvider="target">
+                            <rect key="frame" x="98" y="125" width="160" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Customers" id="puf-VL-u4l">
+                                <font key="font" size="24" name="HelveticaNeue-Light"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="onCustomers:" target="-2" id="AfZ-GN-7Hv"/>
+                                <outlet property="delegate" destination="-2" id="A0h-e5-ooU"/>
+                            </connections>
+                        </textField>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-dM-9FM">
+                            <rect key="frame" x="37" y="60" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="settings" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fZK-Ss-8Kf">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onOptions:" target="-2" id="wxD-E5-3XK"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80y-Dc-BDV" customClass="TextClick" customModule="Invoices" customModuleProvider="target">
+                            <rect key="frame" x="98" y="69" width="160" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Options" id="7Zh-MS-d1r">
+                                <font key="font" size="24" name="HelveticaNeue-Light"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="onOptions:" target="-2" id="Eua-iP-4qI"/>
+                                <outlet property="delegate" destination="-2" id="pvU-Nh-SFN"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tl5-uU-Qd3">
+                    <rect key="frame" x="811" y="20" width="166" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="by Armonia Software" id="keM-dR-y8c">
+                        <font key="font" size="18" name="HelveticaNeue-Light"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </customView>
+    </objects>
+    <resources>
+        <image name="InvoiceMain" width="411" height="273.75"/>
+        <image name="document" width="32" height="32"/>
+        <image name="edit" width="32" height="32"/>
+        <image name="people" width="32" height="32"/>
+        <image name="settings" width="32" height="32"/>
+    </resources>
+</document>

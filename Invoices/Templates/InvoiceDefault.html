@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <style>
+            body { margin: 1in; font: normal 1em "Helvetica Neue"; }
+            li { list-style-type: none; }
+            h1, h2, h3 { margin: 0; padding: 0; font-weight: normal; }
+            .customer h3, .totals h3 { border-bottom: 1px solid #CCC; margin-bottom: 6pt; }
+            
+            label { display: inline-block; width: 80pt; }
+            .amounts li { text-align: right; }
+            .amounts label { width: 80pt; text-align: left; }
+            .right { display: inline-block; width: 100pt; text-align:right; }
+            
+            table { width: 100%; border-collapse: collapse;}
+            table th { border-bottom: 1px solid #CCC; font-weight: normal; }
+            table th:nth-child(1) { width: 14%; }
+            table th:nth-child(2) { width: 40%; }
+            table th:nth-child(3) { width: 20%; }
+            table th:nth-child(4) { width:  5%; }
+            table th:nth-child(5) { width: 20%; }
+
+            .header    { overflow: auto; }
+            .company   { float: left; }
+            .invoice   { float: right; clear: right; margin-top: 10pt; }
+            .customer  { overflow: auto; margin-top: 50pt; }
+            .billTo    { float: left;  clear: left; width: 45%; }
+            .shipTo    { float: right; clear: right; width: 45%; }
+            .lineItems { overflow: auto; margin-top: 50pt; }
+            .totals    { overflow: auto; margin-top: 50pt; }
+            .notes     { float: left;  clear: left; width: 50%; }
+            .amounts   { float: right; clear: right; margin-top: 10pt; width: 40%; }
+            .footer    { overflow: auto; margin-top: 50pt; text-align: center; }
+            
+            /* PRINT - PDF */
+            
+            @media print {
+                
+                @page {
+                	/*size: "A4";*/
+                    size: "US Letter";
+                    /*size: 8.5in 11in;*/
+                    /*size: 612.45pt 841.70pt;*/
+                    /*margin: 20pt;*/
+                }
+                
+                
+
+                html { margin: 0; padding: 0;}
+                body { margin: 0; padding:0; width: 350pt; font-size: 8pt;}
+                .customer h3, .totals h3 { margin-bottom: 4pt; }
+               
+                table { width: 100%; } 
+                label { width: 60pt; }
+                .amounts label { width: 60pt; }
+                .right { width: 70pt; }
+               
+                .invoice   { margin-top:  0pt; }
+                .customer  { margin-top: 25pt; }
+                .lineItems { margin-top: 25pt; }
+                .totals    { margin-top: 25pt; }
+                .amounts   { margin-top:  0pt; }
+                .footer    { margin-top: 25pt; }
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- Header -->
+        
+        <div class="header">
+            <div class="company">
+                <h2>{{companyName}}</h2>
+                <h3>{{companyLine1}}</h3>
+                <h3>{{companyLine2}}</h3>
+                <h3>{{companyLine3}}</h3>
+                <h3>{{companyLine4}}</h3>
+            </div>
+            <div class="invoice">
+                <li><label>Invoice # </label><span class="right"><b>{{invoiceNumber}}</b></span></li>
+                <li><label>Issue Date: </label><span class="right">{{issueDate}}</span></li>
+                <li><label>Terms: </label><span class="right">{{terms}}</span></li>
+                <li><label>Due Date: </label><span class="right">{{dueDate}}</span></li>
+                <li><label>Total Invoice: </label><span class="right"><b>{{totalInvoice}}</b></span></li>
+            </div>
+        </div>
+        
+        <!-- BillTo/ShipTo -->
+        <div class="customer">
+            <div class="billTo">
+                <h3>Bill To:</h3>
+                <li><span><b>{{billToName}}</b></span></li>
+                <li><span>{{billToLine1}}</span></li>
+                <li><span>{{billToLine2}}</span></li>
+                <li><span>{{billToLine3}}</span></li>
+                <li><span>{{billToPhone}}</span></li>
+                <li><span>{{billToEmail}}</span></li>
+            </div>
+            <div class="shipTo">
+                <h3>Ship To:</h3>
+                <li><span>{{shipToName}}</span></li>
+                <li><span>{{shipToLine1}}</span></li>
+                <li><span>{{shipToLine2}}</span></li>
+                <li><span>{{shipToLine3}}</span></li>
+                <li><span>{{shipToPhone}}</span></li>
+                <li><span>{{shipToEmail}}</span></li>
+            </div>
+        </div>
+        
+        <!-- Line Items - Loop -->
+        
+        <div class="lineItems">
+            <table>
+                <tr>
+                    <th align="left">Qty</th>
+                    <th align="left">Description</th>
+                    <th align="right">Unit Price</th>
+                    <th align="center">&nbsp;</th>
+                    <th align="right">Total Amount</th>
+                </tr>
+                {{items}}
+                <tr>
+                    <td align="left">{{quantity}}</td>
+                    <td align="left">{{descript}}</td>
+                    <td align="right">{{unitPrice}}</td>
+                    <td align="center">{{unitOfMeasure}}</td>
+                    <td align="right">{{total}}</td>
+                </tr>
+                {{/items}}
+            </table>
+        </div>
+        
+        <!-- Totals and notes -->
+        
+        <div class="totals">
+            <div class="notes">
+                <h3>Notes:</h3>
+                <div class="text">{{notes}}</div>
+            </div>
+            <div class="amounts">
+                <li><label>Subtotal: </label><span class="right">{{subtotal}}</span></li>
+                <li><label>Taxes {{taxRate}}% </label><span class="right">{{totalTaxes}}</span></li>
+                <li><label>Total Invoice: </label><span class="right"><b>{{totalInvoice}}</b></span></li>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        
+        <div class="footer">
+            <div class="salute"><h2>{{salute}}</h2></div>
+            <div class="fineprint"><small>{{fineprint}}</small></div>
+        </div>
+        
+    </body>
+    
+</html>
