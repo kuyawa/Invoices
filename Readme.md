@@ -5,7 +5,7 @@ Manage all your invoices in your own computer for better privacy. Keep track of 
 Here are some screenshots of the Invoices App:
 
 ##Main window
-[Screenshot1](screenshot1.jpg)
+[Screenshot1](https://raw.githubusercontent.com/kuyawa/Invoices/master/Screenshots/screenshot1.jpg)
 
 ## New Invoice
 [Screenshot2](screenshot2.jpg)
