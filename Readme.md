@@ -5,19 +5,19 @@ Manage all your invoices in your own computer for better privacy. Keep track of 
 Here are some screenshots of the Invoices App:
 
 ##Main window
-[Screenshot1](screenshot1.jpg)
+![Screenshot1](https://raw.githubusercontent.com/kuyawa/Invoices/master/Screenshots/screenshot1.jpg)
 
 ## New Invoice
-[Screenshot2](screenshot2.jpg)
+![Screenshot2](https://raw.githubusercontent.com/kuyawa/Invoices/master/Screenshots/screenshot2.jpg)
 
 ##List of invoices by month
-[Screenshot3](screenshot3.jpg)
+![Screenshot3](https://raw.githubusercontent.com/kuyawa/Invoices/master/Screenshots/screenshot3.jpg)
 
 ## Customers
-[Screenshot4](screenshot4.jpg)
+![Screenshot4](https://raw.githubusercontent.com/kuyawa/Invoices/master/Screenshots/screenshot4.jpg)
 
 ## Options
-[Screenshot5](screenshot5.jpg)
+![Screenshot5](https://raw.githubusercontent.com/kuyawa/Invoices/master/Screenshots/screenshot5.jpg)
 
 
 This application will be in continuous development to include more features in future releases like inventory, quotes, purchase orders, accounts payable and receivable, and many more interesting features to make it your preferred administrative tool for your business.
