@@ -168,6 +168,9 @@ class InvoiceView: NSViewController {
         case "unitofmeasure":
             invoice.items[row].unitOfMeasure = sender.stringValue
             invoice.items[row].isModified = true
+            
+            recalcRowAmount(row)
+            recalcTotals()
             break
         default: /* Unkown cell */
             break
@@ -573,7 +576,9 @@ class InvoiceView: NSViewController {
     
     func recalcRowAmount(_ row: Int){
         let item = invoice.items[row]
-        item.amount = Double(item.quantity) * item.unitPrice
+//         item.amount = Double(item.quantity) * item.unitPrice
+        item.amount = Double(item.unitOfMeasure.toDouble()) * item.unitPrice
+        
         // No taxes yet
         item.total = item.amount
         // Update row
