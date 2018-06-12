@@ -15,7 +15,10 @@ extension String {
     // To numbers
     
     func toDouble() -> Double {
-        var text = self.replacingOccurrences(of: "$", with: "")
+        let locale = Locale.current
+        let currencySymbol = locale.currencySymbol!
+        var text = self.replacingOccurrences(of: currencySymbol, with: "")//"$"
+//         var text = self.replacingOccurrences(of: "$", with: "")
         text = text.replacingOccurrences(of: ",", with: "")
         if let value = NumberFormatter().number(from: text)?.doubleValue {
             return value
